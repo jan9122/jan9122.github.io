@@ -7,99 +7,83 @@
   <meta name="description" content="Portfolio of Jan Rubio – Software Engineer and Computer Engineering student specializing in embedded systems and motorsport technology. Showcasing projects, experience, skills, and contact information.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <style>
-    /* Base Styles */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
-      background: #0d1117;  /* dark background */
-      color: #e6edf3;       /* light text */
+      background: #0d1117;
+      color: #e6edf3;
       line-height: 1.6;
-      overflow-x: hidden;   /* prevent horizontal scroll if any */
     }
-    /* Header / Hero */
     header {
-      background: linear-gradient(135deg, #1f6feb, #0d1117);  /* blue to black gradient */
-      padding: 4rem 2rem 3rem;
+      background: linear-gradient(135deg, #1f6feb, #0d1117);
+      padding: 5rem 2rem 3rem;
       text-align: center;
+      position: relative;
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 3.2rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.25rem;
-      opacity: 0.85;
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
-    /* Navigation Menu */
-    header nav {
-      margin-top: 1.5rem;
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0d1117;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+      z-index: 1000;
     }
-    header nav a {
+    nav a {
       margin: 0 1rem;
       font-weight: 600;
       color: #e6edf3;
       text-decoration: none;
     }
-    header nav a:hover {
+    nav a:hover {
       color: #58a6ff;
-      text-decoration: underline;
     }
-    /* Sections */
     section {
       padding: 3rem 2rem;
       max-width: 960px;
       margin: auto;
     }
     section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
       border-bottom: 2px solid #30363d;
       padding-bottom: 0.5rem;
     }
-    /* Alternate background for some sections to improve contrast */
-    #projects, #education, #contact {
-      background: #161b22;
-    }
-    /* Projects – use card style for project entries */
-    .project {
+    .project, .exp-card {
       background: #21262d;
       padding: 1rem 1.5rem;
       border: 1px solid #30363d;
       border-radius: 6px;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
     }
-    .project h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
+    .project:hover, .exp-card:hover {
+      transform: translateY(-5px);
+    }
+    .project h3, .exp-card h3 {
+      font-size: 1.3rem;
       margin-bottom: 0.5rem;
     }
-    /* Experience – custom list style */
-    #experience ul {
-      list-style: none;
-      padding-left: 0;
+    #skills ul, .exp-card ul {
+      padding-left: 1.5rem;
     }
-    #experience li {
-      margin-bottom: 1.5rem;
-    }
-    #experience li::before {
-      content: "💼 ";  /* briefcase icon before each job */
-      margin-right: 0.5rem;
-    }
-    /* (Optional) Skills – custom list style, e.g., checkmark before each skill
-    #skills ul { list-style: none; padding-left: 0; }
-    #skills li::before {
-      content: "✔️ ";
-      margin-right: 0.5rem;
-    } */
-    /* Contact section links */
     .contact p {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
     }
     .contact i {
       margin-right: 0.5rem;
-      vertical-align: middle; /* align icon with text */
+      vertical-align: middle;
     }
     .contact a {
       color: #58a6ff;
@@ -108,86 +92,109 @@
     .contact a:hover {
       text-decoration: underline;
     }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Jan Rubio</h1>
     <p>Chief of Software &bull; Embedded Systems &bull; Formula Student</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>✨ About Me</h2>
-    <p>I'm a passionate software engineer and computer engineering student with a focus on embedded systems, vehicle control software, and innovation in motorsport. Currently serving as the Chief of Software at **TecnoCampus MotorSports**, I lead the development and integration of all vehicle software systems – including the ECU firmware, telemetry, driver display, and sensor networks – to ensure safety, performance, and reliability on track.</p>
+    <p>I'm a passionate software engineer and computer engineering student focused on embedded systems, vehicle control software, and innovation in motorsport. As Chief of Software at TecnoCampus MotorSports, I lead the development and integration of ECU firmware, telemetry, driver display, and sensor networks, ensuring safety and performance on track.</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" data-aos="fade-up">
     <h2>🚀 Projects</h2>
     <div class="project">
       <h3>Formula Student Car Software Architecture</h3>
-      <p>Led the design and implementation of the full software architecture for an electric Formula Student race car. This encompassed developing the ECU firmware, telemetry systems, safety logic, sensor fusion algorithms, and CAN bus communication. Coordinated software validation and integration with hardware subsystems, ensuring the car met all safety and performance criteria on the track.</p>
+      <p>Led the full software architecture for an electric race car: ECU firmware, telemetry systems, safety logic, and CAN communication. Integrated hardware/software and ensured reliable on-track performance.</p>
     </div>
     <div class="project">
       <h3>Real-Time Telemetry Platform & Dashboard</h3>
-      <p>Designed and built a real-time telemetry system coupled with a driver dashboard UI. Implemented data acquisition and transmission via CAN and UART protocols, with cloud storage and live visualization dashboards for engineering diagnostics. This platform enabled the race team to monitor vehicle parameters in real time and make data-driven decisions during testing.</p>
+      <p>Built a telemetry system with driver UI. Data collected via CAN/UART, stored in the cloud, and displayed for engineering insights.</p>
     </div>
     <div class="project">
       <h3>Academic Java & Embedded Systems Projects</h3>
-      <p>Developed multiple academic projects demonstrating object-oriented design and embedded programming. Notable examples include an Arduino-based IoT device and a Java application for managing sensor data, focusing on modular architecture and performance optimization in C, C++, and Java.</p>
+      <p>Created academic projects using Java, C++, and embedded C focused on modular architecture and low-level optimization.</p>
     </div>
   </section>
 
-  <section id="experience">
+  <section id="experience" data-aos="fade-up">
     <h2>📊 Experience</h2>
-    <ul>
-      <li>
-        <strong>Chief of Software</strong> @ TecnoCampus MotorSports &ndash; <em>Nov 2023 – Present</em><br/>
-        Leading a multidisciplinary software team for our Formula Student electric car project. Overseeing ECU firmware development, telemetry and data acquisition systems, driver displays, and sensor network integration. Ensuring all software components work together seamlessly and safely in a high-performance racing environment.
-      </li>
-      <li>
-        <strong>Control Room Operator</strong> @ MIM Maintenance &ndash; <em>Jul 2024 – Aug 2025</em><br/>
-        Monitored and controlled critical industrial systems and processes in real-time. Responded to system alerts and collaborated with engineering teams to maintain optimal operation and safety procedures.
-      </li>
-      <li>
-        <strong>Maintenance Technician</strong> @ Coty, Inc. &ndash; <em>Jun 2022 – Sep 2023</em><br/>
-        Performed preventive and corrective maintenance on production line machinery. Diagnosed issues and implemented automation improvements to reduce downtime, thereby increasing efficiency in the manufacturing process.
-      </li>
-    </ul>
+    <div class="exp-card">
+      <h3>Chief of Software @ TecnoCampus MotorSports</h3>
+      <p><em>Nov 2023 – Present</em></p>
+      <ul>
+        <li>Led ECU, telemetry, display, and sensor development for electric Formula Student car.</li>
+        <li>Managed team workflows and cross-functional hardware integration.</li>
+      </ul>
+    </div>
+    <div class="exp-card">
+      <h3>Control Room Operator @ MIM Maintenance</h3>
+      <p><em>Jul 2024 – Aug 2025</em></p>
+      <ul>
+        <li>Monitored and controlled industrial systems and processes in real-time.</li>
+        <li>Maintained safe operating conditions and rapid fault response.</li>
+      </ul>
+    </div>
+    <div class="exp-card">
+      <h3>Maintenance Technician @ Coty, Inc.</h3>
+      <p><em>Jun 2022 – Sep 2023</em></p>
+      <ul>
+        <li>Performed maintenance on production machinery and proposed automation solutions.</li>
+        <li>Enhanced uptime through diagnostics and process improvements.</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="education">
+  <section id="education" data-aos="fade-up">
     <h2>📚 Education</h2>
-    <p><strong>B.S. in Computer Engineering</strong><br/>
-       Universitat Oberta de Catalunya (UOC) – <em>2025 – Present</em></p>
-    <p><strong>Engineering in Computer Management and Information Systems</strong><br/>
-       TecnoCampus Mataró (UPF) – <em>2023 – 2025</em></p>
+    <p><strong>B.S. in Computer Engineering</strong><br/>Universitat Oberta de Catalunya (2025 – Present)</p>
+    <p><strong>Computer Management & Information Systems Engineering</strong><br/>TecnoCampus Mataró (UPF) (2023 – 2025)</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" data-aos="fade-up">
     <h2>🔧 Skills</h2>
     <ul>
-      <li>Embedded Systems &amp; ECU Firmware Development (C/C++)</li>
-      <li>Telemetry Systems, CAN Bus &amp; Real-Time Communication</li>
-      <li>Programming in Python, Java, C++ and C</li>
-      <li>Version Control with Git/GitHub (Branches, PRs, CI/CD)</li>
-      <li>System Integration, Debugging &amp; Performance Tuning</li>
-      <li>Technical Leadership &amp; Documentation</li>
+      <li>Embedded Systems & ECU Firmware (C/C++)</li>
+      <li>CAN Bus & Real-Time Telemetry</li>
+      <li>Programming: Python, Java, C++</li>
+      <li>Git, GitHub, CI/CD, PR Workflows</li>
+      <li>System Integration & Debugging</li>
+      <li>Technical Leadership & Documentation</li>
     </ul>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="contact" class="contact" data-aos="fade-up">
     <h2>💎 Contact</h2>
     <p><i class="ph ph-envelope"></i>Email: <a href="mailto:janrubiomontes@gmail.com">janrubiomontes@gmail.com</a></p>
     <p><i class="ph ph-github-logo"></i>GitHub: <a href="https://github.com/jan9122" target="_blank">github.com/jan9122</a></p>
     <p><i class="ph ph-link-simple"></i>Portfolio: <a href="https://jan9122.github.io" target="_blank">jan9122.github.io</a></p>
   </section>
+
+  <footer>
+    &copy; 2025 Jan Rubio. Built for motorsport & embedded software excellence.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
