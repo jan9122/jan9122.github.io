@@ -1,210 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jan Rubio | Software Engineer Portfolio</title>
-  <meta name="description" content="Portfolio of Jan Rubio – Software Engineer specializing in embedded systems, test automation, and motorsport technology. Showcasing projects, experience, skills, and contact information.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0d1117;
-      color: #e6edf3;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #1f6feb, #0d1117);
-      padding: 5rem 2rem 3rem;
-      text-align: center;
-      position: relative;
-    }
-    header h1 {
-      font-size: 3.2rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      background: #0d1117;
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 1px solid #30363d;
-      z-index: 1000;
-    }
-    nav a {
-      margin: 0 1rem;
-      font-weight: 600;
-      color: #e6edf3;
-      text-decoration: none;
-    }
-    nav a:hover {
-      color: #58a6ff;
-    }
-    section {
-      padding: 3rem 2rem;
-      max-width: 960px;
-      margin: auto;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 2px solid #30363d;
-      padding-bottom: 0.5rem;
-    }
-    .project, .exp-card {
-      background: #21262d;
-      padding: 1rem 1.5rem;
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      margin-bottom: 2rem;
-      transition: transform 0.3s ease;
-    }
-    .project:hover, .exp-card:hover {
-      transform: translateY(-5px);
-    }
-    .project h3, .exp-card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-    }
-    #skills ul, .exp-card ul {
-      padding-left: 1.5rem;
-    }
-    .contact p {
-      margin-bottom: 0.8rem;
-    }
-    .contact i {
-      margin-right: 0.5rem;
-      vertical-align: middle;
-    }
-    .contact a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    .contact a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #8b949e;
-      border-top: 1px solid #30363d;
-      margin-top: 2rem;
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101b27">
+<title>Jan Rubio Montes · Software Engineer</title>
+<meta name="description" content="Jan Rubio Montes. Ingeniería de software, automatización de pruebas y sistemas embebidos para automoción. Experiencia en DXC Technology y Formula Student.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23101b27'/%3E%3Ctext x='5' y='22' fill='%237ce5cf' font-family='sans-serif' font-size='17' font-weight='700'%3EJR%3C/text%3E%3C/svg%3E">
+<style>
+:root{--ink:#101b27;--muted:#52616f;--paper:#f5f7f9;--line:#dce2e7;--accent:#7ce5cf;--green:#13735f;--max:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #149d85;outline-offset:5px}.skip{position:fixed;left:15px;top:-100px;background:#fff;padding:10px;z-index:100}.skip:focus{top:10px}.wrap{width:min(var(--max),calc(100% - 96px));margin:auto}.nav{background:#101b27;position:sticky;top:0;z-index:20;border-bottom:1px solid #ffffff18;color:#fff}.nav-inner{height:84px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:13px;font-size:16px;font-weight:600}.monogram{border:1px solid #ffffff40;width:40px;height:40px;display:grid;place-items:center;font-size:14px;letter-spacing:-1px;color:var(--accent)}.nav-links{display:flex;align-items:center;gap:30px;font-size:14px;color:#c3ccd5}.nav-links a:hover{color:var(--accent)}.nav-links .contact-link{padding:8px 17px;border:1px solid #73818f;color:white}.menu{display:none;background:none;border:1px solid #73818f;color:#fff;padding:8px 12px}.hero{background:var(--ink);color:#fff;padding:81px 0 0;overflow:hidden}.eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:600;display:flex;gap:12px;align-items:center}.eyebrow:before{content:'';width:25px;height:1px;background:currentColor}.hero .eyebrow{color:var(--accent)}.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:70px;padding-bottom:78px;align-items:center}h1{font-size:clamp(3rem,5.7vw,5.4rem);line-height:1.05;letter-spacing:-4px;font-weight:600;margin:26px 0}h1 span{color:var(--accent);display:block}.hero-name{font-size:19px;margin:0 0 16px;color:#d3dde6}.hero-copy{max-width:525px;color:#aebdcb;margin:0 0 31px}.actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:11px 22px;font-size:14px;font-weight:600;border:1px solid #758391;transition:background .2s,color .2s}.button.primary{background:var(--accent);color:var(--ink);border-color:var(--accent)}.button:hover{background:white;color:var(--ink)}.architecture{border:1px solid #ffffff25;background:#142231;padding:27px;position:relative}.panel-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff20;padding-bottom:18px;font-size:12px;letter-spacing:1.5px;color:#a5b5c4}.panel-top span:last-child{color:var(--accent);font-family:monospace}.diagram{margin:28px 0}.diagram-node{border:1px solid #ffffff30;padding:17px;text-align:center;display:flex;justify-content:space-between;align-items:center;font-family:monospace;font-size:14px}.diagram-node small{font:12px 'Segoe UI',sans-serif;color:#aebdcb}.diagram-node.center{background:#7ce5cf0d;border-color:#7ce5cf85;color:var(--accent);padding:24px 17px}.bus{margin-left:50%;border-left:1px solid #7ce5cf90;min-height:43px;display:flex;align-items:center;padding-left:16px;font:12px monospace;color:#8ba0b3}.diagram-bottom{display:grid;grid-template-columns:1fr 1fr;gap:15px}.diagram-bottom .diagram-node{display:block;font-size:13px}.diagram-bottom small{display:block;margin-top:6px}.diagram-caption{border-top:1px solid #ffffff20;padding-top:18px;margin:0;color:#91a5b7;font-size:12px}.hero-foot{border-top:1px solid #ffffff20;display:flex;justify-content:space-between;gap:25px;padding:22px 0;color:#aebdcb;font-size:13px}.hero-foot b{color:#fff;font-weight:500}.section{padding:90px 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:45px;align-items:end}h2{font-size:clamp(2rem,3.5vw,3rem);line-height:1.15;letter-spacing:-1.7px;font-weight:600;margin:18px 0 0}.section-head p{color:var(--muted);margin:0;max-width:470px}.section .eyebrow{color:var(--green)}.capabilities{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:#fff}.capability{padding:32px;border-right:1px solid var(--line)}.capability:last-child{border:0}.number{font:13px monospace;color:var(--green)}h3{font-size:21px;line-height:1.3;margin:25px 0 16px;letter-spacing:-.5px}.capability p{color:var(--muted);font-size:15px;margin:0}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.tag{font:12px/1.4 monospace;background:#edf3f5;color:#405461;padding:6px 9px}.experience-layout{display:grid;grid-template-columns:260px 1fr;gap:70px}.side-note{font-size:14px;color:var(--muted);margin-top:25px;max-width:220px}.timeline{border-top:1px solid var(--line)}.role{padding:32px 0;border-bottom:1px solid var(--line)}.role-top{display:flex;justify-content:space-between;gap:25px;margin-bottom:12px}.role h3{margin:0 0 8px}.company{font-size:15px;color:var(--green);font-weight:600}.date{font-size:13px;color:var(--muted);white-space:nowrap}.role p{color:var(--muted);font-size:15px;margin:16px 0}.role ul{padding-left:19px;margin:16px 0 0;font-size:15px;color:var(--muted)}.role li+li{margin-top:9px}.milestones{margin:22px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;border-left:2px solid #178a74;padding-left:18px}.milestones span{font-size:12px;color:var(--muted);display:block}.milestones strong{font-size:14px;font-weight:600;display:block;margin-top:4px}details{margin-top:30px}summary{cursor:pointer;font-size:14px;font-weight:600;padding:12px 0;color:var(--green)}.additional{padding:5px 20px;background:white;border:1px solid var(--line)}.additional p{font-size:14px;color:var(--muted)}.education{display:grid;grid-template-columns:1.2fr 1fr;gap:80px}.study{padding:21px 0;border-bottom:1px solid var(--line)}.study h3{font-size:18px;margin:0 0 5px}.study p{font-size:14px;margin:0;color:var(--muted)}.study:first-of-type{margin-top:25px}.tool-groups{display:grid;grid-template-columns:1fr 1fr;gap:25px}.tool-group h3{font-size:15px;margin:0 0 15px}.tool-group p{font-size:15px;color:var(--muted);margin:0}.languages{border-top:1px solid var(--line);padding-top:24px;margin-top:30px;display:flex;justify-content:space-between;gap:15px;font-size:14px}.languages span{display:block;color:var(--muted);font-size:12px}.contact{background:var(--ink);color:white;padding:80px 0}.contact .eyebrow{color:var(--accent)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.contact h2{font-size:clamp(2.5rem,4.5vw,4rem);margin:20px 0}.contact p{color:#aebdcb;max-width:470px}.email{font-size:clamp(1.1rem,2.3vw,1.75rem);border-bottom:1px solid #ffffff50;padding-bottom:12px;display:block;overflow-wrap:anywhere}.email:hover{color:var(--accent)}.socials{display:flex;gap:26px;margin-top:24px;font-size:14px;color:#c5d1dc}.socials a:hover{text-decoration:underline}.footer{background:var(--ink);color:#91a5b7;font-size:12px}.footer-inner{border-top:1px solid #ffffff20;padding:25px 0;display:flex;justify-content:space-between;gap:20px}.nav-links a.active{color:var(--accent)}
+@media(min-width:1600px){.hero{padding-top:105px}.hero-grid{padding-bottom:100px}}@media(max-width:1000px){.wrap{width:calc(100% - 56px)}.hero-grid{gap:35px}h1{letter-spacing:-2.5px}.architecture{padding:20px}.experience-layout{grid-template-columns:220px 1fr;gap:35px}.education{gap:40px}.capability{padding:25px}.role-top{display:block}.date{margin-top:10px}.milestones{grid-template-columns:1fr}.nav-links{gap:20px}}
+@media(max-width:720px){.wrap{width:calc(100% - 40px)}.nav-inner{height:72px}.brand{font-size:14px}.menu{display:block;font-size:13px}.nav-links{display:none;position:absolute;left:0;right:0;top:72px;background:var(--ink);padding:20px;flex-direction:column;align-items:stretch;gap:20px;border-bottom:1px solid #ffffff30}.nav-links.open{display:flex}.hero{padding-top:44px}.hero-grid{grid-template-columns:1fr;padding-bottom:36px;gap:36px}h1{font-size:3.25rem;letter-spacing:-2px}.hero-copy{font-size:16px}.architecture{max-width:500px}.hero-foot{flex-wrap:wrap;gap:10px;font-size:12px}.section{padding:58px 0}.section-head,.experience-layout,.education,.contact-grid{grid-template-columns:1fr;gap:30px}.section-head{margin-bottom:30px}.capabilities{grid-template-columns:1fr}.capability{border-right:0;border-bottom:1px solid var(--line);padding:26px}.capability h3{margin:16px 0 12px}.side-note{max-width:none;margin-bottom:0}.role{padding:26px 0}.milestones{grid-template-columns:1fr 1fr}.education{gap:50px}.contact{padding:58px 0}.contact-grid{gap:26px}.footer-inner{flex-direction:column;gap:5px}.eyebrow{font-size:12px;letter-spacing:1.8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Jan Rubio</h1>
-    <p>Software Engineer @ DXC Technology &bull; Head of Software @ TecnoCampus MotorSports</p>
-  </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>I'm a Software Engineer focused on embedded systems, hardware-adjacent software, and test automation. Currently working as an Analyst II Software Engineer at DXC Technology developing automated testing frameworks, and leading the software department at TecnoCampus MotorSports, where I oversee the ECU firmware, telemetry, and CAN communication for our electric Formula Student race car.</p>
-  </section>
-
-  <section id="projects" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Formula Student Car Software Architecture</h3>
-      <p>Led the full software architecture for an electric race car: VCU firmware, telemetry systems, safety logic, and CAN communication. Integrated hardware/software using Modern C++ and microcontrollers.</p>
-    </div>
-    <div class="project">
-      <h3>Automated Testing & QA Infrastructure</h3>
-      <p>Developing and maintaining robust test automation frameworks using Java, ensuring traceability, executing system-level validation, and performing root-cause analysis for banking applications.</p>
-    </div>
-    <div class="project">
-      <h3>Real-Time Telemetry Platform & Dashboard</h3>
-      <p>Built a telemetry system with real-time monitoring and diagnostics. Data collected via CAN/UART/TCP, stored, and displayed for engineering insights and performance analysis.</p>
-    </div>
-  </section>
-
-  <section id="experience" data-aos="fade-up">
-    <h2>Experience</h2>
-    <div class="exp-card">
-      <h3>Analyst II Software Engineer @ DXC Technology</h3>
-      <p><em>Jan 2026 – Present</em></p>
-      <ul>
-        <li>Develop and maintain automated test cases for mobile banking applications using Java-based frameworks.</li>
-        <li>Use Jenkins and Mobile Center to execute, monitor, and report application test results.</li>
-        <li>Perform debugging and root-cause analysis to improve test reliability and system-level validation.</li>
-      </ul>
-    </div>
-    <div class="exp-card">
-      <h3>Head of Software Department @ TecnoCampus MotorSports</h3>
-      <p><em>Nov 2023 – Present</em></p>
-      <ul>
-        <li>Lead VCU, telemetry, CAN bus, display systems, and sensor integration for an electric Formula Student vehicle.</li>
-        <li>Develop embedded software using Modern C++ on Teensy 4.1 and STM32 platforms.</li>
-      </ul>
-    </div>
-    <div class="exp-card">
-      <h3>Control Room Operator / 3rd Officer @ MIM Maintenance</h3>
-      <p><em>Jul 2024 – Aug 2025</em></p>
-      <ul>
-        <li>Monitored and supported production stability at Mango logistics facilities using SCADA systems.</li>
-        <li>Responded to incidents affecting production continuity and coordinated with maintenance teams.</li>
-      </ul>
-    </div>
-    <div class="exp-card">
-      <h3>Maintenance Technician @ Coty, Inc.</h3>
-      <p><em>Jun 2022 – Sep 2023</em></p>
-      <ul>
-        <li>Performed maintenance on production machinery and proposed automation solutions.</li>
-        <li>Enhanced uptime through diagnostics and process improvements.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="education" data-aos="fade-up">
-    <h2>Education</h2>
-    <p><strong>B.S. in Computer Engineering</strong><br/>Universitat Oberta de Catalunya (Sep 2025 – Present)</p>
-    <p><strong>Computer Engineering Studies</strong><br/>TecnoCampus Mataró (UPF) (Aug 2023 – Jun 2025)</p>
-  </section>
-
-  <section id="skills" data-aos="fade-up">
-    <h2>Skills</h2>
-    <ul>
-      <li>Embedded Systems & Microcontrollers (STM32, Teensy, Modern C/C++)</li>
-      <li>Communication Protocols (CAN Bus, TCP/IP, Ethernet, I2C, UART)</li>
-      <li>Programming: Modern C++, Java, Python</li>
-      <li>QA Automation, System Integration & Root-Cause Analysis</li>
-      <li>Git, GitHub, Jenkins, CI/CD Workflows</li>
-      <li>Technical Leadership & Hardware-Adjacent Architecture</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="contact" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p><i class="ph ph-envelope"></i>Email: <a href="mailto:janrubiomontes@gmail.com">janrubiomontes@gmail.com</a></p>
-    <p><i class="ph ph-linkedin-logo"></i>LinkedIn: <a href="https://linkedin.com/in/jan-rubio-montes" target="_blank">linkedin.com/in/jan-rubio-montes</a></p>
-    <p><i class="ph ph-github-logo"></i>GitHub: <a href="https://github.com/jan9122" target="_blank">github.com/jan9122</a></p>
-    <p><i class="ph ph-link-simple"></i>Portfolio: <a href="https://jan9122.github.io" target="_blank">jan9122.github.io</a></p>
-  </section>
-
-  <footer>
-    &copy; 2026 Jan Rubio Montes. Built for engineering excellence.
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-</body>
-</html>
+<a href="#contenido" class="skip">Saltar al contenido</a>
+<header class="nav"><div class="wrap nav-inner"><a class="brand" href="#inicio" aria-label="Jan Rubio Montes, inicio"><span class="monogram" aria-hidden="true">JR</span>Jan Rubio Montes</a><button class="menu" aria-expanded="false" aria-controls="navigation">Menú</button><nav id="navigation" class="nav-links" aria-label="Navegación principal"><a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#formacion">Formación</a><a class="contact-link" href="#contacto">Contacto</a></nav></div></header>
+<main id="contenido">
+<section class="hero" id="inicio"><div class="wrap"><div class="hero-grid"><div><div class="eyebrow">Software · Testing · Embedded</div><h1>Ingeniería para<br>software<span>fiable.</span></h1><p class="hero-name">Jan Rubio Montes · Software Engineer</p><p class="hero-copy">De la automatización de pruebas en banca al control de un vehículo eléctrico. Desarrollo, integro y valido software con una visión de sistema.</p><div class="actions"><a class="button primary" href="#experiencia">Explorar mi experiencia</a><a class="button" href="mailto:janrubiomontes@gmail.com">Contactar</a></div></div><div class="architecture" aria-label="Áreas de trabajo en sistemas embebidos: sensores, unidad de control, powertrain y telemetría"><div class="panel-top"><span>SISTEMAS EMBEBIDOS</span><span>C / C++</span></div><div class="diagram"><div class="diagram-node">Sensores y señales<small>I2C · UART</small></div><div class="bus">Adquisición de datos</div><div class="diagram-node center"><strong>VCU / ECU</strong><small>Control + seguridad</small></div><div class="bus">CAN Bus</div><div class="diagram-bottom"><div class="diagram-node">Powertrain<small>Integración</small></div><div class="diagram-node">Telemetría<small>Diagnóstico</small></div></div></div><p class="diagram-caption">Arquitectura · Integración HW/SW · Validación de sistema</p></div></div><div class="hero-foot"><span><b>Mataró</b> · Barcelona</span><span><b>DXC Technology</b> · QA Automation</span><span><b>TecnoCampus MotorSports</b> · Formula Student EV</span></div></div></section>
+<section class="section" id="perfil"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / Perfil profesional</div><h2>La calidad, desde el código<br>hasta el sistema.</h2></div><p>Combino experiencia profesional en automatización de pruebas con desarrollo e integración de sistemas embebidos. Mi enfoque une trazabilidad, análisis de fallos y validación con control electrónico y comunicaciones.</p></div><div class="capabilities"><article class="capability"><span class="number">01 — SOFTWARE QUALITY</span><h3>Automatización y testing</h3><p>Pruebas funcionales, UAT y regresión para aplicaciones Android e iOS. Casos reutilizables, análisis de incidencias y evidencias de ejecución.</p><div class="tags"><span class="tag">Java</span><span class="tag">Appium</span><span class="tag">Selenium</span><span class="tag">JUnit</span></div></article><article class="capability"><span class="number">02 — EMBEDDED SYSTEMS</span><h3>Control y comunicaciones</h3><p>Software en C/C++ para VCU/ECU, adquisición de señales y comunicación CAN. Integración de microcontroladores y subsistemas del vehículo.</p><div class="tags"><span class="tag">C/C++</span><span class="tag">CAN Bus</span><span class="tag">STM32</span><span class="tag">Teensy 4.1</span></div></article><article class="capability"><span class="number">03 — SYSTEM INTEGRATION</span><h3>Integración y validación</h3><p>Arquitectura de software, lógica de seguridad y validación a nivel de sistema. Coordinación de interfaces entre electrónica, powertrain y software.</p><div class="tags"><span class="tag">VCU/ECU</span><span class="tag">HW/SW</span><span class="tag">Telemetría</span></div></article></div></div></section>
+<section class="section" id="experiencia"><div class="wrap experience-layout"><div><div class="eyebrow">02 / Trayectoria</div><h2>Experiencia<br>aplicada.</h2><p class="side-note">Software corporativo, competición eléctrica y una base técnica en automatización industrial.</p></div><div><div class="timeline"><article class="role"><div class="role-top"><div><h3>Analyst II Software Engineer</h3><div class="company">DXC Technology · QA Automation</div></div><div class="date">Ene 2026 — actualidad</div></div><p>Automatización de pruebas para aplicaciones bancarias de Banco Sabadell, en un entorno de trabajo remoto.</p><ul><li>Diseño, mantenimiento y ejecución de más de <strong>300 casos de prueba automatizados</strong> para Android e iOS con Java, Appium, Selenium, JUnit y Maven.</li><li>Testing funcional, UAT y regresión; análisis de fallos, documentación de incidencias y trazabilidad con Jira y Confluence.</li><li>Componentes Page Object y funciones reutilizables. Depuración de localizadores, esperas e interacciones con el framework.</li><li>Ejecución de suites en Jenkins, control de versiones con Git/GitHub y pruebas sobre dispositivos físicos remotos.</li></ul></article><article class="role"><div class="role-top"><div><h3>Custom VCU/ECU Development Lead</h3><div class="company">TecnoCampus MotorSports · Formula Student EV</div></div><div class="date">Ago 2026 — actualidad</div></div><p>Desarrollo de una unidad de control propia para un vehículo eléctrico de Formula Student. Una trayectoria en el equipo iniciada en noviembre de 2023.</p><ul><li>Arquitectura y software embebido en C/C++ con Teensy 4.1 y STM32; control del vehículo e integración hardware/software.</li><li>Integración y depuración de comunicaciones CAN entre VCU/ECU, inversor y subsistemas. Sensores, diagnóstico y telemetría.</li><li>Lógica de seguridad, supervisión de estados y validación del sistema con un equipo multidisciplinar.</li></ul><div class="milestones"><div><span>NOV 2023 — AGO 2025</span><strong>Software Engineer</strong></div><div><span>AGO 2025 — AGO 2026</span><strong>Head of Software</strong></div><div><span>DESDE AGO 2026</span><strong>VCU/ECU Development Lead</strong></div></div></article><article class="role"><div class="role-top"><div><h3>Operador de sala de control</h3><div class="company">MIM Maintenance</div></div><div class="date">Jul 2024 — ago 2025</div></div><p>Supervisión SCADA de instalaciones industriales, respuesta a alarmas y coordinación de incidencias con mantenimiento.</p></article></div><details><summary>Experiencia técnica anterior</summary><div class="additional"><p><strong>Coty · Técnico de mantenimiento</strong><br>Abr — jul 2024 y jun — sep 2023. Mantenimiento, diagnóstico e inspección de maquinaria de producción. Prácticas de jun 2022 a may 2023.</p><p><strong>CARFER 2014 SL · Técnico informático</strong><br>Oct 2020 — mar 2021 · Mataró.</p></div></details></div></div></section>
+<section class="section" id="formacion"><div class="wrap education"><div><div class="eyebrow">03 / Formación</div><h2>Una base técnica<br>en evolución.</h2><article class="study"><h3>Grado en Ingeniería Informática</h3><p>Universitat Oberta de Catalunya · Desde 2025, en curso</p></article><article class="study"><h3>Ingeniería Informática / Sistemas de Información</h3><p>TecnoCampus · 2023 — 2025 · Continuación en UOC</p></article><article class="study"><h3>CFGS Automatización y Robótica Industrial</h3><p>Miquel Biada · 2021 — 2023</p></article><article class="study"><h3>Sistemas Microinformáticos y Redes</h3><p>IES Thos i Codina · 2019 — 2021</p></article></div><div><div class="eyebrow">Herramientas e idiomas</div><h2 style="margin-bottom:35px">Mi entorno de trabajo.</h2><div class="tool-groups"><div class="tool-group"><h3>Lenguajes</h3><p>C / C++<br>Java<br>Python</p></div><div class="tool-group"><h3>Testing</h3><p>Appium · Selenium<br>JUnit · Maven<br>Funcional · UAT · Regresión</p></div><div class="tool-group"><h3>Integración y equipo</h3><p>Jenkins · Git / GitHub<br>Jira · Confluence<br>CI/CD · Page Object</p></div><div class="tool-group"><h3>Embedded e industria</h3><p>CAN · I2C · UART · MQTT<br>Teensy 4.1 · STM32<br>Telemetría · SCADA</p></div></div><div class="languages"><div>Español<span>Nativo</span></div><div>Catalán<span>Nativo</span></div><div>Inglés<span>B2–C1 · Uso profesional</span></div></div></div></div></section>
+<section class="contact" id="contacto"><div class="wrap contact-grid"><div><div class="eyebrow">04 / Contacto</div><h2>Hablemos de<br>ingeniería.</h2><p>Para oportunidades profesionales relacionadas con calidad de software, sistemas embebidos e integración en automoción.</p></div><div><a class="email" href="mailto:janrubiomontes@gmail.com">janrubiomontes@gmail.com</a><div class="socials"><a href="https://www.linkedin.com/in/jan-rubio-montes" target="_blank" rel="noopener noreferrer">LinkedIn <span class="sr-only">(nueva pestaña)</span></a><a href="https://github.com/jan9122" target="_blank" rel="noopener noreferrer">GitHub <span class="sr-only">(nueva pestaña)</span></a></div></div></div></section>
+</main><footer class="footer"><div class="wrap footer-inner"><span>© 2026 Jan Rubio Montes</span><span>Software Engineering · Mataró, Barcelona</span></div></footer>
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+<script>
+const menu=document.querySelector('.menu'),nav=document.querySelector('#navigation');
+function closeMenu(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}
+menu.addEventListener('click',()=>{const opened=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(opened))});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeMenu();menu.focus()}});
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){nav.querySelectorAll('a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id))}})},{rootMargin:'-15% 0px -55% 0px'});
+document.querySelectorAll('main section[id]').forEach(section=>observer.observe(section));
+</script>
+</body></html>
